@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, Briefcase, GraduationCap, Phone, Trophy, Award, Brain, Database, Zap, FileText, ExternalLink, MapPin, Globe, Shield } from 'lucide-react';
+import { Github, Linkedin, Mail, Code, Briefcase, GraduationCap, Phone, Trophy, Award, Brain, Database, Zap, FileText, ExternalLink, MapPin, Globe, Shield } from 'lucide-react';
 import profilePhoto from './assets/profile-photo.png';
 
 function App() {
@@ -320,6 +320,130 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-indigo-600 hover:text-indigo-800 font-semibold transition-colors flex items-center"
+                  >
+                    GitHub <ExternalLink className="w-4 h-4 ml-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Chat with SQL DB */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className="h-48 bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-500 flex items-center justify-center">
+                <Database className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">Chat with SQL Database</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Intelligent chatbot that lets you query a SQL database in natural language. Converts questions into safe SQL, 
+                  runs them, and returns formatted results with validation and error handling.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm rounded-full font-medium">Python</span>
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">SQL</span>
+                  <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full font-medium">NLP</span>
+                </div>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://github.com/ravee360/chat_with_sqldb.git" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-indigo-600 hover:text-indigo-800 font-semibold transition-colors flex items-center"
+                  >
+                    GitHub <ExternalLink className="w-4 h-4 ml-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* ConvoRAG */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className="h-48 bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center">
+                <Database className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">ConvoRAG — Conversational RAG Chatbot</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Modular RAG chatbot with document upload, semantic search, and contextual LLM answers via LangChain. 
+                  Streamlit UI, chat history, and ChromaDB vector store for document Q&amp;A workflows.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full font-medium">LangChain</span>
+                  <span className="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm rounded-full font-medium">FastAPI</span>
+                  <span className="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full font-medium">Streamlit</span>
+                </div>
+                <div className="flex flex-wrap gap-4">
+                  <a 
+                    href="https://raviloveschatbot232326.streamlit.app/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-indigo-600 hover:text-indigo-800 font-semibold transition-colors flex items-center"
+                  >
+                    Live Demo <ExternalLink className="w-4 h-4 ml-1" />
+                  </a>
+                  <a 
+                    href="https://github.com/ravee360/chatbot-with-rag.git" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-800 font-semibold transition-colors flex items-center"
+                  >
+                    GitHub <ExternalLink className="w-4 h-4 ml-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Emotion Detection */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className="h-48 bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 flex items-center justify-center">
+                <Brain className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">Emotion Detection using CNN</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  Seven-class facial expression recognition on FER-2013 with transfer learning (VGG16, ResNet50) and 61%+ validation accuracy. 
+                  OpenCV integration for real-time webcam emotion recognition.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full font-medium">PyTorch</span>
+                  <span className="px-3 py-1 bg-emerald-100 text-emerald-700 text-sm rounded-full font-medium">OpenCV</span>
+                  <span className="px-3 py-1 bg-teal-100 text-teal-700 text-sm rounded-full font-medium">TensorFlow</span>
+                </div>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://github.com/ravee360/Emotion_detection_using_CNN.git" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-800 font-semibold transition-colors flex items-center"
+                  >
+                    GitHub <ExternalLink className="w-4 h-4 ml-1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Cap Detection */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className="h-48 bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 flex items-center justify-center">
+                <Code className="w-16 h-16 text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-gray-800">Cap Detection using YOLOv8</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  YOLOv8 model trained on 1200+ annotated images for cap vs. no-cap detection with strong mAP on validation. 
+                  Real-time inference pipeline with OpenCV for safety and compliance scenarios.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full font-medium">YOLOv8</span>
+                  <span className="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full font-medium">PyTorch</span>
+                  <span className="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full font-medium">OpenCV</span>
+                </div>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://github.com/ravee360/Cap-detection.git" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-gray-800 font-semibold transition-colors flex items-center"
                   >
                     GitHub <ExternalLink className="w-4 h-4 ml-1" />
                   </a>
